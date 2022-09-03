@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+  <title>Homepage</title>
+
+  <meta name="author" content="Jon Barron">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Feng Wang</name>
+              </p>
+              <p>
+                I am a final year M.S. student at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>,
+	where I am fortunate to be advised by Prof. Hairong Lv.
+	My research mainly focuses on self-supervised learning and vision-language models.
+             </p>
+             <p>
+	Presently, I am an intern at <a href="https://www.microsoft.com/">Microsoft Research</a>,
+	working with <a href="http://gitnlp.org/">Dr. Furu Wei</a> and <a href="http://dong.li/">Dr. Li Dong</a>.
+	Before that I have also spent great internship at <a href="https://www.jhu.edu/">Johns Hopkins University</a>,
+	where I was advised by Prof. <a href="https://www.cs.jhu.edu/~ayuille/">Alan Yuille</a>,
+	and at <a href="https://illinois.edu/">UIUC</a>,
+	advised by Prof. <a href="http://blender.cs.illinois.edu/hengji.html">Heng Ji</a>.
+              </p>
+              <p style="text-align:center">
+	<a href="mailto:wangf3014@gmail.com">wangf3014 [at] gmail [dot] com</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:30%;max-width:30%">
+              <a href="images/wf_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/wf_circle.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publications</heading>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+           <tr onmouseout="cp2_stop()" onmouseover="cp2_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='cp2_image'><img style="width:100%" src='images/cp2_1.png'></div>
+                <img style="width:100%" src='images/cp2_0.png'>
+              </div>
+              <script type="text/javascript">
+                function cp2_start() {
+                  document.getElementById('cp2_image').style.opacity = "1";
+                }
+
+                function cp2_stop() {
+                  document.getElementById('cp2_image').style.opacity = "0";
+                }
+                cp2_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> CP2: Copy-Paste Contrastive Pretraining for Semantic Segmentation </papertitle>
+              <br>
+              <strong>Feng Wang</strong>,
+              <a href="https://csrhddlam.github.io/">Huiyu Wang</a>,
+              <a href="https://weichen582.github.io/">Chen Wei</a>,
+              <a href="http://cs.jhu.edu/~ayuille/">Alan Yuille</a>,
+              <a href="https://shenwei1231.github.io/">Wei Shen</a>
+              <br>
+              <em>ECCV </em>, 2022 | 
+              <a href="https://arxiv.org/pdf/2203.11709">arXiv</a>  /
+              <a href="https://github.com/wangf3014/CP2">code</a>
+              <br>
+              We propose a dense (pixel-wise) self-supervised contrastive learning method called CP2,
+              which facilitates both image- and pixel-level representations.
+              We obtain 78.6% mIoU with a ResNet-50 and 79.5% with a ViT-S by finetuning CP2 pretrained models on PASCAL VOC.
+            </td>
+          </tr>
+
+          <tr onmouseout="defo_stop()" onmouseover="defo_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='defo_image'><img style="width:100%" src='images/defo_1.png'></div>
+                <img style="width:100%" src='images/defo_0.png'>
+              </div>
+              <script type="text/javascript">
+                function defo_start() {
+                  document.getElementById('defo_image').style.opacity = "1";
+                }
+
+                function defo_stop() {
+                  document.getElementById('defo_image').style.opacity = "0";
+                }
+                defo_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> Learning to Decompose Visual Features with Latent Textual Representations </papertitle>
+              <br>
+              <strong>Feng Wang</strong>,
+              <a href="https://limanling.github.io/">Manling Li</a>,
+              <a href="https://xudonglinthu.github.io/">Xudong Lin</a>,
+              <a href="http://blender.cs.illinois.edu/hengji.html">Heng Ji</a>
+              <br>
+              <em>ICLR </em>, 2023. Work in progress, preprint will be available soon.
+              <br>
+              We propose a novel vision-language model called Decomposed Feature Optimization (short as DeFO),
+              which decouples the language inputs from the classes to be inferred,
+              and learns to extract detailed visual features with textual representations.
+              <br>
+            </td>
+          </tr>
+
+          <tr onmouseout="cbnn_stop()" onmouseover="cbnn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='cbnn_image'><img style="width:100%" src='images/cbnn_1.png'></div>
+                <img style="width:100%" src='images/cbnn_0.png'>
+              </div>
+              <script type="text/javascript">
+                function cbnn_start() {
+                  document.getElementById('cbnn_image').style.opacity = "1";
+                }
+
+                function cbnn_stop() {
+                  document.getElementById('cbnn_image').style.opacity = "0";
+                }
+                cbnn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> Boost Neural Networks by Checkpoints </papertitle>
+              <br>
+              <strong>Feng Wang</strong>,
+              Guoyizhe Wei,
+              <a href="http://liuqiao.me/">Qiao Liu</a>,
+              Jinxiang Ou,
+              <a href="https://scholar.google.com/citations?user=TaEM1KcAAAAJ&hl=zh-CN&oi=ao">Xian Wei</a>,
+              <a href="https://scholar.google.com/citations?user=WU1tm2EAAAAJ&hl=zh-CN&oi=ao">Hairong Lv</a>
+              <br>
+              <em>NeurIPS </em>, 2021 | 
+              <a href="https://arxiv.org/pdf/2110.00959.pdf">arXiv</a>
+              <br>
+              We propose a novel checkpoint ensemble called Checkpoint Boosted Neural Networks (CBNN),
+              where a boosting scheme is utilized to accelerate model convergence and maximize the checkpoint diversity.
+              Our superior performance is supported by a theoretical proof. 
+              <br>
+            </td>
+          </tr>
+
+          <tr onmouseout="gbf_stop()" onmouseover="gbf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='gbf_image'><img style="width:100%" src='images/gbf.png'></div>
+                <img style="width:100%" src='images/gbf.png'>
+              </div>
+              <script type="text/javascript">
+                function gbf_start() {
+                  document.getElementById('gbf_image').style.opacity = "1";
+                }
+
+                function gbf_stop() {
+                  document.getElementById('gbf_image').style.opacity = "0";
+                }
+                gbf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> Gradient Boosting Forest: a Two-Stage Ensemble Method Enabling Federated Learning of GBDTs </papertitle>
+              <br>
+              <strong>Feng Wang</strong>,
+              Jinxiang Ou,
+              <a href="https://scholar.google.com/citations?user=WU1tm2EAAAAJ&hl=zh-CN&oi=ao">Hairong Lv</a>
+              <br>
+              <em>ICONIP </em>, 2021 | 
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-92270-2_7">paper</a>
+              <br>
+              We propose a novel GBDT model which extends each single decision tree of GBDT to an ensemble of trees that are
+              trained from different  data splits. Our method allows decentralized training and achieves more robust performance.
+            </td>
+          </tr>
+
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                  Last update: Sep. 2022 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
