@@ -108,6 +108,51 @@
               <br>
             </td>
           </tr>
+
+	<tr onmouseout="adventurer_stop()" onmouseover="adventurer_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='adventurer_image'><img style="width:100%" src='images/adventurer_1.png'></div>
+                <img style="width:100%" src='images/adventurer_0.png'>
+              </div>
+              <script type="text/javascript">
+                function adventurer_start() {
+                  document.getElementById('adventurer_image').style.opacity = "1";
+                }
+
+                function adventurer_stop() {
+                  document.getElementById('adventurer_image').style.opacity = "0";
+                }
+                adventurer_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> Causal Image Modeling for Efficient Visual Understanding </papertitle>
+              <br>
+              <strong>Feng Wang</strong>,
+	      Timing Yang,
+	      <a href="https://yaodongyu.github.io/"> Yaodong Yu</a>,
+	      <a href="https://oliverrensu.github.io/"> Sucheng Ren</a>,
+	      Guoyizhe Wei,
+	      <a href="https://angtianwang.github.io/"> Angtian Wang</a>,
+	      <a href="https://nephrology.medicine.ufl.edu/profile/shao-wei-1/"> Wei Shao</a>,
+	      <a href="https://yuyinzhou.github.io/">Yuyin Zhou</a>,
+              <a href="http://cs.jhu.edu/~ayuille/">Alan Yuille</a>,
+	      <a href="https://cihangxie.github.io/">Cihang Xie</a>,
+              <br>
+              <em>Preprint, under review </em>. | <a href="https://github.com/wangf3014/Adventurer">arXiv</a>
+		    | <a href="https://github.com/wangf3014/Adventurer">code</a>
+              <br>
+              we present a comprehensive analysis of causal image modeling and introduce the 
+		    Adventurer series models where we treat images as sequences of patch tokens 
+		    and employ uni-directional language models to learn visual representations.
+		    This modeling paradigm allows us to process images in a recurrent formulation with
+		    linear complexity relative to the sequence length, which can effectively address
+		    the memory and computation explosion issues posed by high-resolution and fine-grained images.
+              <br>
+            </td>
+          </tr>
 	  
 	<tr onmouseout="cp2_stop()" onmouseover="cp2_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
