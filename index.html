@@ -74,7 +74,42 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-           <tr onmouseout="cp2_stop()" onmouseover="cp2_start()">
+        <tr onmouseout="sclip_stop()" onmouseover="sclip_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='sclip_image'><img style="width:100%" src='images/sclip_1.png'></div>
+                <img style="width:100%" src='images/sclip_0.png'>
+              </div>
+              <script type="text/javascript">
+                function sclip_start() {
+                  document.getElementById('sclip_image').style.opacity = "1";
+                }
+
+                function sclip_stop() {
+                  document.getElementById('sclip_image').style.opacity = "0";
+                }
+                sclip_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> SCLIP: Rethinking Self-Attention for Dense Vision-Language Inference </papertitle>
+              <br>
+              <strong>Feng Wang</strong>,
+              <a href="https://meijieru.com/">Jieru Mei</a>,
+              <a href="http://cs.jhu.edu/~ayuille/">Alan Yuille</a>
+              <br>
+              <em>ECCV 2024 </em>. | <a href="https://arxiv.org/pdf/2312.01597.pdf">arXiv</a>
+		    | <a href="https://github.com/wangf3014/SCLIP">code</a>
+              <br>
+              We present a zero-shot semantic segmentation model called SCLIP (Segmentation-adapted CLIP model),
+		which leverages our newly proposed correlative self-attention mechanism and allows training-free
+		adaptation to semantic segmentation tasks with CLIP.
+              <br>
+            </td>
+          </tr>
+	  
+	<tr onmouseout="cp2_stop()" onmouseover="cp2_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <br></br>
               <div class="one">
@@ -148,40 +183,7 @@
             </td>
           </tr>
 
-          <tr onmouseout="sclip_stop()" onmouseover="sclip_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <br></br>
-              <div class="one">
-                <div class="two" id='sclip_image'><img style="width:100%" src='images/sclip_1.png'></div>
-                <img style="width:100%" src='images/sclip_0.png'>
-              </div>
-              <script type="text/javascript">
-                function sclip_start() {
-                  document.getElementById('sclip_image').style.opacity = "1";
-                }
-
-                function sclip_stop() {
-                  document.getElementById('sclip_image').style.opacity = "0";
-                }
-                sclip_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> SCLIP: Rethinking Self-Attention for Dense Vision-Language Inference </papertitle>
-              <br>
-              <strong>Feng Wang</strong>,
-              <a href="https://meijieru.com/">Jieru Mei</a>,
-              <a href="http://cs.jhu.edu/~ayuille/">Alan Yuille</a>
-              <br>
-              <em>Preprint, under review </em>. | <a href="https://arxiv.org/pdf/2312.01597.pdf">arXiv</a>
-		    | <a href="https://github.com/wangf3014/SCLIP">code</a>
-              <br>
-              We present a zero-shot semantic segmentation model called SCLIP (Segmentation-adapted CLIP model),
-		which leverages our newly proposed correlative self-attention mechanism and allows training-free
-		adaptation to semantic segmentation tasks with CLIP.
-              <br>
-            </td>
-          </tr>
+          
 
           <tr onmouseout="dpt_stop()" onmouseover="dpt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
