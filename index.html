@@ -153,6 +153,46 @@
               <br>
             </td>
           </tr>
+
+	<tr onmouseout="mambar_stop()" onmouseover="mambar_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='mambar_image'><img style="width:100%" src='images/mambar_1.png'></div>
+                <img style="width:100%" src='images/mambar_0.png'>
+              </div>
+              <script type="text/javascript">
+                function mambar_start() {
+                  document.getElementById('mambar_image').style.opacity = "1";
+                }
+
+                function mambar_stop() {
+                  document.getElementById('mambar_image').style.opacity = "0";
+                }
+                mambar_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> Mamba-Reg: Vision Mamba Also Needs Registers </papertitle>
+              <br>
+              <strong>Feng Wang</strong>,
+              <a href="https://jiahaoplus.github.io/"> Jiahao Wang</a>,
+	      <a href="https://oliverrensu.github.io/"> Sucheng Ren</a>,
+	      Guoyizhe Wei,
+	      <a href="https://meijieru.com/">Jieru Mei</a>,
+	      <a href="https://nephrology.medicine.ufl.edu/profile/shao-wei-1/"> Wei Shao</a>,
+	      <a href="https://yuyinzhou.github.io/">Yuyin Zhou</a>,
+              <a href="http://cs.jhu.edu/~ayuille/">Alan Yuille</a>,
+	      <a href="https://cihangxie.github.io/">Cihang Xie</a>,
+              <br>
+              <em>ECCV 2024 </em>. | <a href="https://arxiv.org/pdf/2312.01597.pdf">arXiv</a>
+		    | <a href="https://github.com/wangf3014/SCLIP">code</a>
+              <br>
+              Similar to Vision Transformers, we identify artifacts also present within the feature maps of Vision Mamba.
+		    These artifacts, corresponding to high-norm tokens emerging in low-information background areas of images, appear much more severe in Vision Mamba
+              <br>
+            </td>
+          </tr>
 	  
 	<tr onmouseout="cp2_stop()" onmouseover="cp2_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
