@@ -70,6 +70,40 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
+
+	<tr onmouseout="dpt_stop()" onmouseover="dpt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <br></br>
+              <div class="one">
+                <div class="two" id='dpt_image'><img style="width:100%" src='images/dpt_1.png'></div>
+                <img style="width:100%" src='images/dpt_0.png'>
+              </div>
+              <script type="text/javascript">
+                function dpt_start() {
+                  document.getElementById('dpt_image').style.opacity = "1";
+                }
+
+                function dpt_stop() {
+                  document.getElementById('dpt_image').style.opacity = "0";
+                }
+                dpt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> Dual Prompt Tuning for Domain-Aware Federated Learning </papertitle>
+              <br>
+		<strong>Guoyizhe Wei<strong/>, Feng Wang, Anshul Shah, Rama Chellappa
+              <br>
+              <em>Preprint, under review </em>. | <a href="https://arxiv.org/pdf/2310.03103.pdf">arXiv</a>
+              <br>
+              We address the challenges of domain shift in vision-language inference by leveraging
+		the technique of prompt learning for both the image and text encoders in CLIP,
+		which facilitates domain adaptation over decentralized and non-iid data.
+              <br>
+            </td>
+          </tr>
+
+
         <tr onmouseout="sclip_stop()" onmouseover="sclip_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <br></br>
@@ -190,114 +224,11 @@
             </td>
           </tr>
 	  
-	<tr onmouseout="cp2_stop()" onmouseover="cp2_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <br></br>
-              <div class="one">
-                <div class="two" id='cp2_image'><img style="width:100%" src='images/cp2_1.png'></div>
-                <img style="width:100%" src='images/cp2_0.png'>
-              </div>
-              <script type="text/javascript">
-                function cp2_start() {
-                  document.getElementById('cp2_image').style.opacity = "1";
-                }
+	
 
-                function cp2_stop() {
-                  document.getElementById('cp2_image').style.opacity = "0";
-                }
-                cp2_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> CP2: Copy-Paste Contrastive Pretraining for Semantic Segmentation </papertitle>
-              <br>
-              <strong>Feng Wang</strong>,
-              <a href="https://csrhddlam.github.io/">Huiyu Wang</a>,
-              <a href="https://weichen582.github.io/">Chen Wei</a>,
-              <a href="http://cs.jhu.edu/~ayuille/">Alan Yuille</a>,
-              <a href="https://shenwei1231.github.io/">Wei Shen</a>
-              <br>
-              <em>ECCV </em>, 2022 | 
-              <a href="https://arxiv.org/pdf/2203.11709">arXiv</a>  /
-              <a href="https://github.com/wangf3014/CP2">code</a>
-              <br>
-              We propose a dense (pixel-wise) self-supervised contrastive learning method called CP2,
-              which facilitates both image- and pixel-level representations.
-              We obtain 78.6% mIoU with a ResNet-50 and 79.5% with a ViT-S by finetuning CP2 pretrained models on PASCAL VOC.
-            </td>
-          </tr>
+        
 
-          <tr onmouseout="defo_stop()" onmouseover="defo_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <br></br>
-              <div class="one">
-                <div class="two" id='defo_image'><img style="width:100%" src='images/defo_1.png'></div>
-                <img style="width:100%" src='images/defo_0.png'>
-              </div>
-              <script type="text/javascript">
-                function defo_start() {
-                  document.getElementById('defo_image').style.opacity = "1";
-                }
-
-                function defo_stop() {
-                  document.getElementById('defo_image').style.opacity = "0";
-                }
-                defo_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> Learning to Decompose Visual Features with Latent Textual Prompts </papertitle>
-              <br>
-              <strong>Feng Wang</strong>,
-              <a href="https://limanling.github.io/">Manling Li</a>,
-              <a href="https://xudonglinthu.github.io/">Xudong Lin</a>,
-	      <a href="https://scholar.google.com/citations?user=WU1tm2EAAAAJ&hl=zh-CN&oi=ao">Hairong Lv</a>,
-	      <a href="https://alexander-schwing.de/">Alexander G. Schwing</a>,
-              <a href="http://blender.cs.illinois.edu/hengji.html">Heng Ji</a>
-              <br>
-              <em>ICLR </em>, 2023. | <a href="https://arxiv.org/pdf/2210.04287">arXiv</a>
-              <br>
-              We propose a novel vision-language model called Decomposed Feature Prompting (short as DeFo),
-              which decouples the language inputs from the classes to be inferred,
-              and learns to extract detailed visual features with textual prompts.
-              <br>
-            </td>
-          </tr>
-
-          
-
-          <tr onmouseout="dpt_stop()" onmouseover="dpt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <br></br>
-              <div class="one">
-                <div class="two" id='dpt_image'><img style="width:100%" src='images/dpt_1.png'></div>
-                <img style="width:100%" src='images/dpt_0.png'>
-              </div>
-              <script type="text/javascript">
-                function dpt_start() {
-                  document.getElementById('dpt_image').style.opacity = "1";
-                }
-
-                function dpt_stop() {
-                  document.getElementById('dpt_image').style.opacity = "0";
-                }
-                dpt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> Dual Prompt Tuning for Domain-Aware Federated Learning </papertitle>
-              <br>
-		Guoyizhe Wei, <strong>Feng Wang</strong>, Anshul Shah, Rama Chellappa
-              <br>
-              <em>Preprint, under review </em>. | <a href="https://arxiv.org/pdf/2310.03103.pdf">arXiv</a>
-              <br>
-              We address the challenges of domain shift in vision-language inference by leveraging
-		the technique of prompt learning for both the image and text encoders in CLIP,
-		which facilitates domain adaptation over decentralized and non-iid data.
-              <br>
-            </td>
-          </tr>
-
+  
 
           <tr onmouseout="cbnn_stop()" onmouseover="cbnn_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
